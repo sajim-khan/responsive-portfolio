@@ -273,10 +273,18 @@ main {
 
 /* Responsive Styles */
 @media screen and (max-width: 576px){
-  .skills-container, .resume-content, .about-info-container{
+  .header{
+    background-image: none;
+  }
+  nav, .banner,.skills-container, .resume-content, .about-info-container, .contact{
     flex-direction: column;
     padding:10px 20px;
   }
+  nav ul{
+    flex-direction: column;
+    gap: 20px;
+  }
+  
   .about, .contact{
     padding: 20px;
   }
@@ -286,6 +294,3 @@ main {
   
 } */
 
-.hide{
-  display: none;
-}
